@@ -1,0 +1,25 @@
+<h1>Excel POC</h1>
+
+<br />
+
+<h2>Test 1</h2>
+<input type="file" (change)="ReadExcel($event)" />
+<br />
+<br />
+<h2>Test2</h2>
+<input type="file" (change)="testFunc($event)" />
+<br /><br />
+<button (click)="cambiarCelda('C2')">C2</button>
+<button (click)="cambiarCelda('C3')">C3</button>
+<button (click)="cambiarCelda('C4')">C4</button>
+<button (click)="cambiarCelda('C5')">C5</button>
+<br />
+<button (click)="reiniciar()">Reiniciar</button>
+
+<br /><br />
+
+<h3>Celda seleccionada: {{ celdaSeleccionada }}</h3>
+<br />
+<h3>
+  Valor de la celda seleccionada: {{ valorCeldaSeleccionada || "Sin valor" }}
+</h3>
